@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="navbar">
+    <div id="logo">
+        <img class="pizza-logo" src="logo/pizza.png" alt="keep updated">
+    </div>
+    <div id="links">
+
+            <a href="index.html">Pizza</a>
+            <a href="drinks.html">Drinks</a>
+            <a href="salat.html">Salat</a>
+            <a href="feedback.html">Feedback</a>
+
+    </div>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Pizza</a>
+            <a href="drinks.html">Drinks</a>
+            <a href="salat.html">Salat</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "60%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+</script>
+<main id="main-page">
+    <div class="wrapper">
+        <img class="schnell" src="images/pizza.jpg" width="400px" height="300px" alt="Pizza">
+    </div>
+    <div id="layers">
+        <img class="firstone" src="images/drinks.jpg"  alt="Pizza">
+        <img class="secondone" src="images/pizza.jpg" alt="Pizza">
+        <img class="thirdone" src="images/salat.jpg" alt="Pizza">
+    </div>
+
+
+</main>
+<footer class="wave">
+    <div id="footer">
+        <div id="left-footer">Modifizierungen</div>
+
+        <div id="right-footer">Schönere Navigation </div>
+    </div>
+</footer>
+</body>
+</html>

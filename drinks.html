@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+<div id="navbar">
+    <div id="logo">
+        <img src="logo/pizza.png" alt="keep updated">
+    </div>
+    <div id="links">
+
+        <a href="index.html">Pizza</a>
+        <a href="drinks.html">Drinks</a>
+        <a href="salat.html">Salat</a>
+        <a href="feedback.html">Feedback</a>
+
+    </div>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Pizza</a>
+            <a href="drinks.html">drinks</a>
+            <a href="salat.html">Salat</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+<section id="collection">
+    <div class="products1">
+        <img class= "picture1" src="images/löwe1.jpg"><br>
+        <figcaption style="font-family: Bahnschrift; padding-left: 10px" ><img src="./images/warenkorb.png" width="30px" height="30px"><select name="drinks">
+
+            <option value="alcohol">hautnah </option>
+            <option value="non-alcohol">steicheln</option>
+        </select>
+        </figcaption>
+    </div>
+
+    <div class="products2">
+        <img class="picture2"src="images/löwe3.jpg"><br>
+        <figcaption style="font-family: Bahnschrift;padding-left: 10px"><img src="./images/warenkorb.png"width="30px" height="30px"><select name="drinks">
+            <option value="alcohol">hautnahn</option>
+            <option value="non-alcohol">steicheln</option>
+        </select>Klassiker
+        </figcaption>
+    </div>
+    <div class="products3">
+        <img class="picture3" src="./images/löwe4.jpg"><br>
+        <figcaption style="font-family: Bahnschrift; padding-left: 10px"><img src="./images/warenkorb.png" width="30px" height="30px"> <select name="drinks">
+            <option value="alcohol">hautnah</option>
+            <option value="non-alcohol">steicheln</option>
+        </select>gebrüll
+        </figcaption>
+    </div>
+    <div class="products4">
+        <img class="picture4" src="./images/löwe5.jpg"><br>
+        <figcaption style="font-family: Bahnschrift; padding-left: 10px"><img src="./images/warenkorb.png" width="30px" height="30px"> <select name="drinks">
+            <option value="alcohol">hautnah</option>
+            <option value="non-alcohol">steicheln</option>
+        </select> zähne
+        </figcaption>
+    </div>
+    <div class="products5">
+        <img class="picture5"src="./images/löwe2.jpg"><br>
+        <figcaption  style="font-family: Bahnschrift; padding-left: 10px;"><img src="./images/warenkorb.png" width="30px" height="30px"> <select name="drinks">
+            <option value="alcohol">hautnah</option>
+            <option value="non-alcohol">steicheln</option>
+        </select> krallen
+        </figcaption>
+    </div>
+</section>
+<footer>
+    <div id="footer">
+        <div id="left-footer">Modifizierungen</div>
+
+        <div id="right-footer">Schönere Navigation </div>
+    </div>
+</footer>
+<script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("bbtn").innerHTML =
+                    this.responseText;
+            }
+        };
+        xhttp.open("GET", "ajax_info.txt", true);
+        xhttp.send();
+    }
+</script>
+
+</body>
+</html>
